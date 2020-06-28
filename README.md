@@ -34,7 +34,3 @@ sum_dif_rev(3) -----> 495
 "Important: Do not include numbers which, when reversed, have a leading zero, e.g.: 1890 reversed is 0981, so 1890 should not be included."
 
 Your code will be tested up to the first 65 terms, so you should think to optimize it as much as you can.
-
-(Hint: I memoize, you memoize, he memoizes, ......they (of course) memoize)
-
-Happy coding!!
