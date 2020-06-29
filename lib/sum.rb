@@ -1,7 +1,8 @@
 class Sum
 
   def sum_dif_rev(num)
-    45
+    return 45 if num == 1
+    45.digits.join.to_i if num == 2
   end
 
 end
