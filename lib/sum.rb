@@ -2,8 +2,17 @@ class Sum
 
   def sum_dif_rev(num)
     return 45 if num == 1
-    return sum_dif_rev(num-1).digits.join.to_i if num % 2==0
-    495
+    i = sum_dif_rev(num-1)
+    return i.digits.join.to_i if num % 2 == 0
+    i += 1
+    while true do
+      if (i == i.digits.join.to_i || (i + i.digits.join.to_i) % (i - i.digits.join.to_i).abs() != 0)
+        i += 1
+      else
+        break
+      end
+    end
+    i
   end
 
 end
