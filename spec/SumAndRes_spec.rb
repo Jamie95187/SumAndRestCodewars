@@ -28,4 +28,8 @@ describe 'sum_dif_rev' do
     expect(sum.sum_dif_rev(6)).to eq 4545
   end
 
+  it('should return 495495') do
+    expect(sum.sum_dif_rev(41)).to eq 495495
+  end
+
 end
